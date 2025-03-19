@@ -39,7 +39,7 @@ const formatDataSet = async () => {
 };
 
 const config = async () => {
-    axios
+    await axios
         .get("/api/config-dashboard")
         .then((response) => {
             item.value = response.data;
